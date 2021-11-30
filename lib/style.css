@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{ text-decoration: none; }
+
+.titulo{ font-family: 'Sigmar One', cursive; }
+
+.texto-blanco{ color: #fff; }
+
+.texto-oscuro{ color: #424141; }
+
+.texto-marron{ color: #f07800; }
+
+.texto-verde{ color: #6E9E3A; }
+
+.texto-sombra{ text-shadow: 1px 1px #1d1d1d; }
+.info-descripcion{ font-family: 'Roboto';}
+
+.card-producto-btn{
+    font-size: 11px;
+    color: white;
+    padding: 8px 15px;
+    background: #c8690a;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.card-producto-btn:hover{
+    background: #db7a19;
+}
+
+input.form-control, textarea.form-control{
+    background: #E6F1F3;
+    border: none;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+input.form-control.buscar-producto {
+    background: #fafeff;
+    border: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: solid 1px #bdbcbc;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #6e9e3a;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(110 158 58 / 51%);
+}
+
+.huella-perro{
+    width: 100px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    transform: rotateZ(-40deg);
+}
+.header-background-oscuro{
+    height: 100%;
+    background: #7f60474d;
+}
+.seccion-claro{ 
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #FAFBF9; 
+}
+.seccion-claro-productos{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #FAFBF9; 
+}
+.seccion-verde{ 
+    padding-top: 65px;
+    padding-bottom: 120px;
+    background-color: #6E9E3A; 
+}
+.contenedor-footer{ 
+    padding-top: 65px;
+    padding-bottom: 65px;
+    position: relative;
+    background-color: #363C47; 
+}
+
+.contenedor-header-inicio {
+    background-image: url('./img/perromarron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    background-color: #1e1919;
+    height: 350px;
+}
+
+.contenedor-header-nosotros {
+    background-image: url('./img/perromirandoalfrente.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    height: 250px;
+}
+
+.contenedor-header-productos {
+    background-image: url('./img/perromirandoalfrente.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    height: 250px;
+}
+
+.contenedor-header-contacto {
+    background-image: url('./img/perromirandoalfrente.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    height: 250px;
+}
+
+.contenedor-header-inicio .navbar,
+.contenedor-header-nosotros .navbar{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
+    position: fixed;
+    top: -1px;
+    z-index: 99999;
+    font-family: 'Roboto';
+    font-weight: 500;
+    box-shadow: -1px 2px 3px 0px #0000004a;
+}
+
+.redes-text-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.redes-contenedor-icono{
+    width: 100px;
+    border-radius: 30px;
+    border: solid 1px #fff;
+    padding: 5px 12px;
+    text-align: center;
+}
+.text-redes{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #fff;
+}
+.contenedor-header-inicio .logo-movil label,
+.contenedor-header-nosotros .logo-movil label
+{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contenedor-header-inicio .logo-movil span,
+.contenedor-header-nosotros .logo-movil span
+{
+    color: #363C47;
+}
+
+.contenedor-header-inicio .bg-brown,
+.contenedor-header-nosotros .bg-brown
+{
+    background-color:#C8690A;
+}
+
+.contenedor-header-inicio .info-principal,
+.contenedor-header-nosotros .info-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.contenedor-header-inicio .info-principal .row,
+.contenedor-header-nosotros .info-principal .row{
+    margin-top: 52.35px;
+}
+
+.btn-comprar, .btn-enviar{
+    color: #fff;
+    font-weight: 700;
+    background-color: #C8690A;
+    box-shadow: -1px 4px 4px 0px #00000059;
+}
+
+.btn-comprar:hover, .btn-enviar:hover{
+    color: #fff;
+    background-color: #db7a19;
+}
+
+.btn-comprar img{
+    margin-left: 5px;
+}
+
+.icono-blanco{
+    color: white;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+.card-producto{ 
+    display: inline-block;
+    max-width: 220px; 
+    min-width: 210px; 
+    min-height: 230px;
+    padding: 8px 2px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 15px;
+    border: none;
+}
+.card-producto:hover{
+    transform: scale(1.02);
+    box-shadow: -2px 1px 3px 0px #dddddd38;
+}
+.card-sombra{ box-shadow: -1px 2px 3px 0px #91919138 }
+.card-producto-descripcion{
+    margin:5px 0;
+    font-size: 11px;
+    color: #464646;
+}
+.card-footer{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: white;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 5px;
+}
+
+.contenedor-footer > .container
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-llamenos {
+    height: 150px;
+    top: -123px;
+    display: flex;
+    /* width: calc(100% - 24px); */
+    width: 100%;
+}
+
+.card-llamenos-imagen{
+    position: absolute;
+    background-image: url(./img/perroblanco.jpg);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 0px 0px 8px;
+    top: -1px;
+    left: -1px;
+}
+
+.card-llamenos-texto{
+    position: absolute;
+    left: 150px;
+    width: calc( 100% - 150px );
+    height: 100%;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.contenedor-footer .logo-movil{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.contenedor-footer .logo-movil label{
+    margin-left: 6px;
+}
+
+.footer-titulo{
+    border-top: 2px #6E9E3A solid;
+    display: inline-block;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav ul{
+    width: calc( 100% - 25px );
+    list-style: none;
+    font-size: 15px;
+    color: #6E9E3A;
+    text-align: left;
+    padding: 0;
+    max-width: 300px;
+}
+
+.footer-nav li{
+    padding: 5px 0;
+}
+
+.footer-nav a{
+    color: #fff;
+}
+
+.footer-horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-horarios table{
+    width: calc( 100% - 25px );
+    font-size: 15px;
+    color: #6E9E3A;
+    text-align: left;
+    max-width: 300px;
+}
+
+.contenedor-copyright{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #2B323E;
+}
+
+.productos-destacados img{
+    max-width: 200px;
+}
+
+.card-llamenos-texto img{
+    width: 50px;
+}
+
+.nosotros-imagen-vision, 
+.nosotros-imagen-mision{
+    padding: 0.45rem;
+    border-radius: 0.3rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.nosotros-card-mision{
+    background-color: #6E9E3A;
+    height: 100%;
+    text-align: center;
+}
+
+.nosotros-card-vision{
+    height: 100%;
+    text-align: center;
+}
+
+.card-productos-categoria{
+    background-color: #E8E8E8;
+    border: none;
+}
+
+.listado{
+    list-style: none;
+    padding: 0;
+}
+
+.listado li{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.listado li:hover, .listado li:focus{
+    color: #64b60d;
+}
+
+@media (min-width: 768px) {
+    
+    .contenedor-header-inicio
+    {
+        background-image: url('./img/perromarron.jpg');
+        background-size: 100% 120%;
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-color: #1e1919;
+    }
+
+    .contenedor-header-nosotros
+    {
+        background-image: url(./img/perromirandoalfrente.jpg);
+        background-size: 100% 150%;
+        background-position: 0px -44px;
+        background-repeat: no-repeat;
+    }
+    
+    .contenedor-header-inicio .logo-movil label,
+    .contenedor-header-nosotros .logo-movil label{
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .info-descripcion{
+        font-size: 17px;
+    }
+
+    .contenedor-header-inicio .info-principal,
+    .contenedor-header-nosotros .info-principal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+    }    
+
+    .btn-comprar, .btn-enviar{
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .card-llamenos-imagen{
+        height: 150px;
+    }
+
+    .card-llamenos-texto img{
+        width: 60px;
+    }
+
+    .card-llamenos-texto h6{
+        font-size: 18px;
+    }
+
+    .contenedor-footer .redes-text-icon{
+        width: 160px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .contenedor-header-inicio .navbar,
+    .contenedor-header-nosotros .navbar{
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        position: sticky;
+        top: -1px;
+        border-radius: 50px;
+    }
+    .contenedor-header-inicio {
+        background-size: 100% 100%;
+        background-position: 0px -0px;
+        background-repeat: no-repeat;
+        background-color: #1e1919;
+        height: 500px;
+    }
+    .contenedor-header-nosotros {
+        background-size: 100% 180%;
+        background-position:0px -143px;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    .contenedor-header-inicio .info-principal,
+    .contenedor-header-nosotros .info-principal{
+        height: calc( 100% - 109.4px);
+    } 
+    .contenedor-header-inicio .info-principal .row,
+    .contenedor-header-nosotros .info-principal .row{
+        margin-top: 0px;
+    }
+    .redes-text-icon{
+        display: flex;
+        text-align: right;
+    }
+
+    img.productos-destacados-principal{
+        width: 100%;
+        max-width: 150px;
+    }
+
+    img.productos-destacados-secundario{
+        min-width: 100px;
+        max-width: 110px;
+    }
+    
+    .productos-destacados .row{
+        flex-direction: column;
+    }
+    .contenedor-footer .logo-movil{
+        justify-content: start;
+    }
+    .card-llamenos{
+        width: 100%;
+    }
+    .footer-nav ul{
+        width: calc( 100% - 25px );
+        list-style: none;
+        font-size: 15px;
+        color: #6E9E3A;
+        text-align: left;
+        padding: 0;
+        max-width: 140px;
+    }
+    .card-llamenos-texto h6{
+        font-size: 25px;
+    }
+    .nosotros-imagen, 
+    .nosotros-vision{
+        padding: 0.45rem;
+        border-radius: 0.3rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor-header-inicio{
+        background-size: 100% 210%;
+        background-position: center;
+        height: 620px;
+    }
+
+    .contenedor-header-nosotros {
+        background-size: 100% 180%;
+        background-position: center;
+    }
+
+    .contenedor-header-inicio .navbar,
+    .contenedor-header-nosotros .navbar {
+        width: 96%;
+        margin: 0 auto;
+        max-width: 1420px;
+    }
+    .seccion-claro{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .titulo-principal{
+        font-size: 40px;
+    }
+    .titulo-secundario{
+        font-size: 25px;
+    }
+    .info-descripcion{
+        font-size: 20px;
+    }
+    .btn-comprar, .btn-enviar {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    .btn-enviar {
+        font-size: 20px;
+        padding: 10px 65px;
+    }
+
+    img.productos-destacados-principal{
+        max-width: 200px;
+    }
+    img.productos-destacados-secundario{
+        max-width: 130px;
+    }
+    .seccion-verde{
+        padding-top: 85px;
+        padding-bottom: 140px;
+    }
+    .card-llamenos{
+        left: inherit;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .nosotros-imagen-mision{
+        width: 350px;
+        transform: translateX(-83px);
+    }
+    .nosotros-imagen-vision{
+        width: 350px;
+        transform: translateX(83px);
+    }
+}
+
+@media (min-width: 1320px) {
+    .contenedor-header-inicio{
+        background-size: 100% 120%;
+        height: 680px;
+    }
+    .card-llamenos-texto h6{
+        font-size: 35px;
+    }
+    
+}
+
+@media (min-width: 1500px) {
+    .contenedor-header-inicio{
+        background-size: 100% 100%;
+        background-position: 0px -0px;
+        background-repeat: no-repeat;
+        background-color: #1e1919;
+        height: 850px;
+    }
+    .contenedor-header-nosotros {
+        background-size: 100% 300%;
+        background-position: 0px -236px;
+        background-repeat: no-repeat;
+        background-color: #1e1919;
+        height: 300px;
+    }
+}
