@@ -18,6 +18,111 @@ a{ text-decoration: none; }
 .texto-sombra{ text-shadow: 1px 1px #1d1d1d; }
 .info-descripcion{ font-family: 'Roboto';}
 
+.etiqueta-oscura{
+    display: inline-block;
+    font-size: 10px;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    background-color: #363C47;
+    color: white;
+    padding: 8px 8px 8px 8px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: #f0f0f0 -1px 3px 7px 0px;
+}
+
+.etiqueta-oscura::before{
+    content: '';
+    color: #fff;
+    position: absolute;
+    right: -19px;
+    top: 19%;
+    border: 10px solid;
+    border-color: #ffffff00 #ffffff00 #ffffff00 #363C47;
+}
+
+.etiqueta-blanca{
+    display: inline-block;
+    font-size: 11px;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    color: #5d636e;
+    padding: 8px 8px 8px 8px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    box-shadow: #f0f0f0 -1px 3px 7px 0px;
+}
+.card-carrito{
+    border: none;
+    background-color: transparent;
+}
+
+.card-producto-carrito{
+    display: inline-block;
+    border: none;
+}
+
+.card-producto-carrito{
+    display: inline-block;
+    border: none;
+}
+
+.card-carrito table{
+    border-collapse: separate;
+    border-spacing: 0px 20px;
+}
+
+.card-carrito thead{
+    background-color: #2B323E;
+}
+
+.card-carrito th{
+    font-weight: 400;
+    padding: 20px 8px;
+}
+
+.card-carrito th:first-child{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.card-carrito th:last-child{
+    border-radius: 0px 8px 8px 0px;
+}
+
+.card-carrito tbody{
+    background-color: #ececec;
+}
+
+.card-carrito td{
+    font-weight: 400;
+    padding: 10px 8px;
+}
+
+.card-carrito td img{
+    min-width: 40px;
+    max-width: 55px;
+}
+
+.card-carrito td:first-child{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.card-carrito td:last-child{
+    border-radius: 0px 8px 8px 0px;
+}
+
+.card-carrito input.form-control{
+    padding: 5px 10px;
+}
+
+.precio{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .card-producto-btn{
     font-size: 11px;
     color: white;
@@ -29,6 +134,23 @@ a{ text-decoration: none; }
 
 .card-producto-btn:hover{
     background: #db7a19;
+}
+
+.btn-carrito-quitar-producto{
+    background-color: #fff;
+    color: #db7a19;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #db7a19;
+    border-radius: 5px;
+    transition: .2;
+}
+
+.btn-carrito-quitar-producto:hover, 
+.btn-carrito-quitar-producto:focus{
+    color: #ff8f1f;
+    border: 1px solid #ff8f1f;
 }
 
 input.form-control, textarea.form-control{
@@ -109,7 +231,7 @@ input.form-control.buscar-producto {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 25% 0;
-    height: 250px;
+    height: 150px;
 }
 
 .contenedor-header-contacto {
@@ -121,6 +243,7 @@ input.form-control.buscar-producto {
 }
 
 .contenedor-header-inicio .navbar,
+.contenedor-header-productos .navbar,
 .contenedor-header-nosotros .navbar{
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -131,6 +254,10 @@ input.form-control.buscar-producto {
     font-family: 'Roboto';
     font-weight: 500;
     box-shadow: -1px 2px 3px 0px #0000004a;
+}
+
+.contenedor-header-productos .titulo-principal{
+    margin-top: 51px;
 }
 
 .redes-text-icon{
@@ -154,26 +281,30 @@ input.form-control.buscar-producto {
     color: #fff;
 }
 .contenedor-header-inicio .logo-movil label,
-.contenedor-header-nosotros .logo-movil label
+.contenedor-header-nosotros .logo-movil label,
+.contenedor-header-productos .logo-movil label
 {
     font-size: 12px;
     font-weight: 700;
 }
 
 .contenedor-header-inicio .logo-movil span,
-.contenedor-header-nosotros .logo-movil span
+.contenedor-header-nosotros .logo-movil span,
+.contenedor-header-productos .logo-movil span
 {
     color: #363C47;
 }
 
 .contenedor-header-inicio .bg-brown,
-.contenedor-header-nosotros .bg-brown
+.contenedor-header-nosotros .bg-brown,
+.contenedor-header-productos .bg-brown
 {
     background-color:#C8690A;
 }
 
 .contenedor-header-inicio .info-principal,
-.contenedor-header-nosotros .info-principal{
+.contenedor-header-nosotros .info-principal,
+.contenedor-header-productos .info-principal{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -183,18 +314,23 @@ input.form-control.buscar-producto {
 }
 
 .contenedor-header-inicio .info-principal .row,
-.contenedor-header-nosotros .info-principal .row{
+.contenedor-header-nosotros .info-principal .row,
+.contenedor-header-productos .info-productos .row{
     margin-top: 52.35px;
 }
 
-.btn-comprar, .btn-enviar{
+.enlace-a-producto{
+    margin-top: 4px;
+}
+
+.btn-comprar, .btn-enviar, .btn-agregar{
     color: #fff;
     font-weight: 700;
     background-color: #C8690A;
     box-shadow: -1px 4px 4px 0px #00000059;
 }
 
-.btn-comprar:hover, .btn-enviar:hover{
+.btn-comprar:hover, .btn-enviar:hover, .btn-agregar:hover{
     color: #fff;
     background-color: #db7a19;
 }
@@ -203,12 +339,38 @@ input.form-control.buscar-producto {
     margin-left: 5px;
 }
 
+.btn-agregar{
+    font-size: 16px;
+    padding: 10px 30px;
+}
+
 .icono-blanco{
     color: white;
 }
 
 .card{
     border-radius: 10px;
+}
+
+.card-producto-detalle{
+    border:none;
+}
+
+.info-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-detalle{
+    min-width: 85px;
+}
+
+.text-detalle{
+    font-size: 12px;
+    font-weight: 400;
+    color: #424141;
 }
 
 .card-producto{ 
@@ -396,6 +558,14 @@ input.form-control.buscar-producto {
     color: #64b60d;
 }
 
+@media (min-width: 500px) {
+    .contenedor-header-productos
+    {
+        background-size: 100% 190%;
+        background-position: 0px -22px;
+    }
+}
+
 @media (min-width: 768px) {
     
     .contenedor-header-inicio
@@ -414,9 +584,23 @@ input.form-control.buscar-producto {
         background-position: 0px -44px;
         background-repeat: no-repeat;
     }
+
+    .contenedor-header-productos
+    {
+        background-image: url(./img/perromirandoalfrente.jpg);
+        background-size: 100% 220%;
+        background-position: 0px -44px;
+        background-repeat: no-repeat;
+        height: 250px;
+    }
+
+    .contenedor-header-productos .titulo-principal{
+        margin-top: 0px;
+    }
     
     .contenedor-header-inicio .logo-movil label,
-    .contenedor-header-nosotros .logo-movil label{
+    .contenedor-header-nosotros .logo-movil label,
+    .contenedor-header-productos .logo-movil label{
         font-size: 15px;
         font-weight: 700;
     }
@@ -426,7 +610,8 @@ input.form-control.buscar-producto {
     }
 
     .contenedor-header-inicio .info-principal,
-    .contenedor-header-nosotros .info-principal{
+    .contenedor-header-nosotros .info-principal,
+    .contenedor-header-productos .info-principal{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -458,7 +643,8 @@ input.form-control.buscar-producto {
 
 @media (min-width: 992px) {
     .contenedor-header-inicio .navbar,
-    .contenedor-header-nosotros .navbar{
+    .contenedor-header-nosotros .navbar,
+    .contenedor-header-productos .navbar{
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
         position: sticky;
@@ -479,11 +665,13 @@ input.form-control.buscar-producto {
         height: 300px;
     }
     .contenedor-header-inicio .info-principal,
-    .contenedor-header-nosotros .info-principal{
+    .contenedor-header-nosotros .info-principal,
+    .contenedor-header-productos .info-principal{
         height: calc( 100% - 109.4px);
     } 
     .contenedor-header-inicio .info-principal .row,
-    .contenedor-header-nosotros .info-principal .row{
+    .contenedor-header-nosotros .info-principal .row,
+    .contenedor-header-productos .info-principal .row{
         margin-top: 0px;
     }
     .redes-text-icon{
@@ -537,13 +725,15 @@ input.form-control.buscar-producto {
         height: 620px;
     }
 
-    .contenedor-header-nosotros {
+    .contenedor-header-nosotros,
+    .contenedor-header-productos {
         background-size: 100% 180%;
         background-position: center;
     }
 
     .contenedor-header-inicio .navbar,
-    .contenedor-header-nosotros .navbar {
+    .contenedor-header-nosotros .navbar,
+    .contenedor-header-productos .navbar {
         width: 96%;
         margin: 0 auto;
         max-width: 1420px;
@@ -616,6 +806,13 @@ input.form-control.buscar-producto {
         height: 850px;
     }
     .contenedor-header-nosotros {
+        background-size: 100% 300%;
+        background-position: 0px -236px;
+        background-repeat: no-repeat;
+        background-color: #1e1919;
+        height: 300px;
+    }
+    .contenedor-header-productos {
         background-size: 100% 300%;
         background-position: 0px -236px;
         background-repeat: no-repeat;

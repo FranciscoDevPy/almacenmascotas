@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sigmar+One&display=swap" rel="stylesheet">
     <!-- Estilo -->
     <link rel="stylesheet" href="./lib/style.css">
-
+    <link rel="shortcut icon" href="./lib/img/ALMACENDEMASCOTAS.png" type="image/x-icon">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                     </a>
                 </div>
             </div>
-            <nav id="navBar" class="navbar navbar-dark bg-brown navbar-expand-lg">
+            <nav id="navBar" class="navbar navbar-dark bg-brown navbar-expand-lg card-sombra">
                 <div class="container-fluid container">
                     <a class="navbar-brand logo-movil  d-lg-none" href="#">
                         <img src="./lib/img/ALMACENDEMASCOTAS.png" width="30px">
@@ -69,10 +69,10 @@
                                 <a class="nav-link" href="./nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./productos.html">Productos</a>
+                                <a class="nav-link active" href="./productos.html">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./contacto.html">Contacto</a>
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
                             </li>
                         </ul>
                         <span class="navbar-text d-lg-none">
@@ -107,93 +107,94 @@
                 <div class="row w-100">
                     <div class="col-12">
                         <h3 class="titulo texto-blanco texto-sombra titulo-principal" >
-                            Contacto
+                            Carrito de Compras
                         </h3>
                     </div>
                 </div>
             </section>
         </div>
     </header>
-    <section class="seccion-claro" >
+    <section class="seccion-claro-productos" >
         <div class="container-fluid container">
-            <div class="row text-center justify-content-center">
-                <div class="col-12 col-xl-8">
-                    <h3 class="titulo texto-verde titulo-principal" >
-                        Ubicación
-                    </h3>
-                    <p class="info-descripcion mt-2 mb-0" >
-                        <i class="fas fa-map-marker-alt"></i> Urbanización Sadi, Tercera Entrada
-                    </p>
-                    <div class="card mt-3 py-3 px-2 px-sm-3 px-md-4 card-sombra">
-                        <img src="./lib/img/mapaalmacendemasctoas.png" width="100%">
-                    </div>
+            <div class="row">
+                <div class="col-12 mt-4 p-0 mx-0">
+                    <a href="./productos.html">
+                        <span class="etiqueta-oscura mt-2 mt-lg-0 ">
+                            Portada
+                        </span>
+                    </a>
+                    <a href="./productos.html">
+                        <span class="etiqueta-oscura mt-2 mt-lg-0 ">
+                            Super Premium Perros
+                        </span>
+                    </a>
+                    <a href="./productos.html">
+                        <span class="etiqueta-oscura mt-2 mt-lg-0 ">
+                            Adultos
+                        </span>
+                    </a>
+                    <a href="./productos.html">
+                        <span class="etiqueta-blanca mt-2 mt-lg-0 ">
+                            BALANCED SENIOR RAZA GRANDE 15KG
+                        </span>
+                    </a>
                 </div>
             </div>
-            <div class="row mt-5 justify-content-center">
-                <div class="col-12 col-lg-9">
-                    <div class="card card-sombra">
-                        <div class="card-body">
-                            <div class="row text-center justify-content-between justify-content-xl-evenly align-items-center">
-                                <div class="col-12 my-2 col-sm-4 my-sm-0 pe-sm-0">
-                                    <img src="./lib/img/correo-electronico.png" width="30px">
-                                    <span class="mx-1" >info@demo.com.py</span>
-                                </div>
-                                <div class="col-12 my-2 col-sm-2 my-sm-0">
-                                    <img src="./lib/img/ALMACENDEMASCOTAS.png" width="50px">
-                                </div>
-                                <div class="col-12 my-2 col-sm-4 my-sm-0 ps-sm-0">
-                                    <img src="./lib/img/llamada-telefonica.png" width="30px">
-                                    <span class="mx-1" >info@demo.com.py</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="seccion-verde" >
-        <div class="container-fluid container" >
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-10 col-xl-8">
-                    <h3 class="titulo texto-blanco titulo-principal text-center" >
-                        Póngase en contacto con nosotros
-                    </h3>
-                    <p class="info-descripcion texto-blanco mt-2 mb-0 text-center" >
-                        Tus comentarios son muy importantes para nosotros.
-                    </p>
-                    <div class="card mt-3 py-5 px-5 card-sombra">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" autocomplete="off" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <input type="text" autocomplete="off" name="apellido" id="apellido" placeholder="Apellido" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <input type="text" autocomplete="off" name="email" id="email" placeholder="Email" class="form-control">
-                                </div>
-                                <div class="col-md-6 mt-3 mt-md-0">
-                                    <input type="text" autocomplete="off" name="telefono" id="telefono" placeholder="Telefono" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-md-12">
-                                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje" rows="6" class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="row mt-4 text-center">
-                                <div class="col-12">
-                                    <button type="button" class="btn btn-enviar">
-                                        Enviar
-                                        <img src="./lib/img/huellaperro.png" width="20px">
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+            <div class="row">
+                <div class="col-12 mx-0 px-2">
+                    <!-- <div class="card card-header-carrito texto-blanco">
+                        <span class="w-50">Producto</span>
+                        <span class="w-20">Precio Unitario</span>
+                        <span class="w-20">Cantidad</span>
+                        <span class="w-20">Total</span>
+                    </div> -->
+                    <div class="card card-carrito texto-blanco" >
+                        <table width="100%" >
+                            <thead class="texto-blanco" >
+                                <tr>
+                                    <th width="6%" ></th>
+                                    <th width="45%" >Producto</th>
+                                    <th width="19.5%" class="text-center" >Precio Unitario</th>
+                                    <th width="10%" class="text-center" >Cantidad</th>
+                                    <th width="19.5%" class="text-center" >Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center" >
+                                        <button class="btn-carrito-quitar-producto" >
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center texto-oscuro" >
+                                            <div class="card card-producto-carrito">
+                                                <div class="card-body">
+                                                    <img src="./lib/img/wprod_276.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="ms-2 d-inline-block" >
+                                                <h6>
+                                                    BALANCED SENIOR RAZA GRANDE 15KG
+                                                </h6>
+                                                <small>Código: 776</small>
+                                                <br>
+                                                <small>Código de Barras: 776456</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" >
+                                        <span class="texto-oscuro precio" >Gs 10.000.000</span>
+                                    </td>
+                                    <td class="text-center" >
+                                        <input type="text" class="form-control bg-white text-center px-0" value="0">
+                                    </td>
+                                    <td class="text-center" >
+                                        <span class="texto-marron precio" >Gs 10.000.000</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -201,26 +202,6 @@
     </section>
     <footer class="contenedor-footer" >
         <div class="container-fluid container" >
-            <div class="card card-llamenos">
-                <div class="card-llamenos-imagen">
-                    <!-- La imagen esta por CSS -->
-                </div>
-                <div class="card-llamenos-texto">
-                    <div class="row w-100 m-0 h-100 text-center align-items-center p-2 text-md-start justify-content-center">
-                        <div class="col-12 col-md-2 col-lg-1 p-lg-0">
-                            <img src="./lib/img/phone.png" alt="" >
-                        </div>
-                        <div class="col-12 col-md-10 col-lg-10">
-                            <h6 class="titulo texto-oscuro m-0" >
-                                Si tiene duda, llámenos! <span class="d-none titulo texto-verde m-0 d-md-inline" > 0971363634</span>
-                            </h6>
-                        </div>
-                        <div class="col-12 d-md-none">
-                            <h6 class="titulo texto-verde m-0"  >0971363634</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row text-center">
                 <div class="col-12 col-md-6">
                     <a class="logo-movil" href="#">
