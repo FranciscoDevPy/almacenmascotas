@@ -393,6 +393,7 @@ input.form-control.buscar-producto {
     margin:5px 0;
     font-size: 11px;
     color: #464646;
+    font-weight: 500;
 }
 .card-footer{ 
     display: flex;
