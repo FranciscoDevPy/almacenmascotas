@@ -142,12 +142,6 @@
             </div>
             <div class="row">
                 <div class="col-12 mx-0 px-2">
-                    <!-- <div class="card card-header-carrito texto-blanco">
-                        <span class="w-50">Producto</span>
-                        <span class="w-20">Precio Unitario</span>
-                        <span class="w-20">Cantidad</span>
-                        <span class="w-20">Total</span>
-                    </div> -->
                     <div class="card card-carrito texto-blanco" >
                         <table width="100%" >
                             <thead class="texto-blanco" >
@@ -195,6 +189,55 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 mx-0 px-2">
+                    <div class="card card-carrito-opciones">
+                        <div class="card-body py-5">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-center">
+                                    <label for="" class="texto-oscuro" >
+                                        <input type="radio" name="tipoentrega" id="delivery" checked>
+                                        <strong style="font-weight: 600;" >Delivery </strong>
+                                        <br>
+                                        <small class="ms-3" > Costo del delivery según distancia</small>
+                                    </label>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center">
+                                    <label for="" class="texto-oscuro" >
+                                        <input type="radio" name="tipopago" id="delivery" checked>
+                                        <strong style="font-weight: 600;" >Pago en efectivo </strong>
+                                    </label>                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6  d-flex justify-content-center">
+                                    <label for="" class="texto-oscuro mt-4" >
+                                        <input type="radio" name="tipoentrega" id="retirar">
+                                        <strong style="font-weight: 600;" > Pasar a retirar </strong>
+                                    </label>
+                                </div>
+                                <div class="col-6  d-flex justify-content-center">
+                                    <label for="" class="texto-oscuro mt-4" >
+                                        <input type="radio" name="tipopago" id="retirar">
+                                        <strong style="font-weight: 600;" > Pago con tarjeta de crédito / debito </strong>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mx-0 px-2">
+                    <div class="card card-carrito-opciones">
+                        <div class="card-body text-center texto-oscuro py-4">
+                            <h2 class="texto-oscuro" >Total Carrito</h2>
+                            <h2 class="texto-verde py-1" >Gs. 300.000</h2>
+                            <button class="btn btn-solicitar" >
+                                <i class="fab fa-get-pocket"></i> Solicitar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

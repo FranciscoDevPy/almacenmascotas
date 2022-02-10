@@ -92,7 +92,19 @@ a{ text-decoration: none; }
     border-radius: 0px 8px 8px 0px;
 }
 
-.card-carrito tbody{
+.card-carrito-opciones{
+    border: none;
+}
+
+.card-carrito-opciones .col-6:last-child{
+    border-left: solid 1px #2b323e71;
+}
+
+.card-carrito-opciones label{
+    width: 290px;
+}
+
+.card-carrito tbody, .card-carrito-opciones{
     background-color: #ececec;
 }
 
@@ -323,14 +335,14 @@ input.form-control.buscar-producto {
     margin-top: 4px;
 }
 
-.btn-comprar, .btn-enviar, .btn-agregar{
+.btn-comprar, .btn-enviar, .btn-agregar, .btn-solicitar{
     color: #fff;
     font-weight: 700;
     background-color: #C8690A;
     box-shadow: -1px 4px 4px 0px #00000059;
 }
 
-.btn-comprar:hover, .btn-enviar:hover, .btn-agregar:hover{
+.btn-comprar:hover, .btn-enviar:hover, .btn-agregar:hover, .btn-solicitar:hover{
     color: #fff;
     background-color: #db7a19;
 }
@@ -346,6 +358,11 @@ input.form-control.buscar-producto {
 
 .icono-blanco{
     color: white;
+}
+
+.btn-solicitar{
+    font-size: 18px;
+    padding: 8px 25px;
 }
 
 .card{
@@ -557,6 +574,37 @@ input.form-control.buscar-producto {
 
 .listado li:hover, .listado li:focus{
     color: #64b60d;
+}
+
+.accordion-button{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0.5rem 0.3rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #64b60d;
+    background-color:transparent;
+    box-shadow: none;
+}
+
+.accordion-button:focus{
+    border:none;
+    outline: 0px;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="green"%3e%3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e');
+    transform: rotate( -180deg );
+}
+
+.accordion-item{
+    background-color: transparent;
+    border: none;
 }
 
 @media (min-width: 500px) {
